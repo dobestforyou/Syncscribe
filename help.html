@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>帮助 - Syncscribe</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 24px; line-height: 1.7; color: #333; }
+        h1 { font-size: 1.5rem; margin-bottom: 8px; }
+        h2 { font-size: 1.15rem; margin-top: 28px; margin-bottom: 10px; color: #111; }
+        h3 { font-size: 1rem; margin-top: 18px; margin-bottom: 6px; color: #333; }
+        p { margin: 10px 0; }
+        ul, ol { margin: 10px 0; padding-left: 24px; }
+        li { margin: 6px 0; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 24px; }
+        a { color: #007AFF; }
+        code { background: #f5f5f5; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+        .tip { background: #f0f7ff; border-left: 4px solid #007AFF; padding: 12px 16px; margin: 16px 0; border-radius: 0 8px 8px 0; }
+        .note { background: #fff9e6; border-left: 4px solid #f5a623; padding: 12px 16px; margin: 16px 0; border-radius: 0 8px 8px 0; }
+        .lang-switch { margin-bottom: 20px; font-size: 0.9rem; }
+        .lang-switch a { margin-right: 12px; }
+        .lang-switch a.active { font-weight: 600; color: #333; }
+    </style>
+</head>
+<body>
+    <div class="lang-switch"><a href="help.html" class="active">中文</a> | <a href="help-en.html">English</a></div>
+
+    <h1>Syncscribe 使用帮助</h1>
+    <p class="meta">详细使用指南 · 最后更新：2025年3月</p>
+
+    <h2>一、快速开始</h2>
+    <p>Syncscribe 是一款<strong>本地化</strong>音视频转写与字幕工具，所有处理均在您的设备上完成，无需联网。</p>
+    <ol>
+        <li><strong>添加文件</strong>：在「转写」标签页添加本地音视频，或通过 URL 下载。</li>
+        <li><strong>开始处理</strong>：选择识别语言，点击「开始处理」进行转写。</li>
+        <li><strong>编辑与剪辑</strong>：转写完成后，点击结果进入「智能播放」，可编辑字幕、勾选片段、一键快剪。</li>
+        <li><strong>导出</strong>：导出字幕文件或带字幕的视频。</li>
+    </ol>
+
+    <h2>二、转写</h2>
+
+    <h3>2.1 添加文件</h3>
+    <ul>
+        <li><strong>本地导入</strong>：点击「添加音频」或「添加视频」，从本机选择文件。支持 MP3、WAV、M4A、MP4、MOV、MKV 等常见格式。</li>
+        <li><strong>URL 下载</strong>：在输入框粘贴 http 或 https 链接，点击下载。适用于从网页获取的音视频文件。</li>
+    </ul>
+
+    <h3>2.2 识别语言</h3>
+    <ul>
+        <li><strong>自动检测</strong>：适合中英混合或不确定语言的场景，系统会自动判断。</li>
+        <li><strong>指定语言</strong>：若内容主要为某一种语言（如中文、英文、日语），选择对应语言可提高准确度。</li>
+    </ul>
+
+    <h3>2.3 模型选择</h3>
+    <p>在「我的」→「识别引擎」中可切换模型：</p>
+    <ul>
+        <li><strong>轻量版（约 39MB）</strong>：体积小、加载快，适合对资源占用敏感的场景。</li>
+        <li><strong>标准版（内置，约 464MB）</strong>：开箱即用，无需下载，兼顾速度与准确度，推荐日常使用。</li>
+        <li><strong>高精度版（约 626MB，需下载）</strong>：识别准确度最高，抗噪能力强，适合专业场景或嘈杂音频。</li>
+    </ul>
+    <p>首次使用会加载模型，请耐心等待。高精度版需点击「下载高精度版」后等待下载完成。</p>
+
+    <h3>2.4 批量处理</h3>
+    <p>添加多个文件后，点击「开始处理」会依次转写所有待处理文件。已转写的文件不会重复处理。</p>
+
+    <h2>三、智能播放（字幕、翻译、剪辑、导出）</h2>
+    <p>转写完成后，点击某条结果可进入「智能播放」界面，包含以下功能面板：</p>
+
+    <h3>3.1 字幕</h3>
+    <p>提供两种视图：</p>
+    <ul>
+        <li><strong>句子</strong>：按句显示，每句带时间戳。点击时间戳可跳转播放；点击「校对」可修改识别错误的文字。</li>
+        <li><strong>单词</strong>：按词显示，适合精细修改。同样支持点击跳转和「编辑」修改。</li>
+    </ul>
+    <p><strong>勾选加入剪辑</strong>：每行前的方框可勾选，勾选后该句/词对应的时间段会加入「剪辑」面板的片段列表，用于后续拼接导出。</p>
+
+    <h3>3.2 翻译</h3>
+    <ul>
+        <li>使用 Apple 设备端翻译，需在<strong>系统设置 → 通用 → 翻译语言</strong>中预先下载目标语言包。</li>
+        <li>选择原文/译文显示模式，可对照查看。</li>
+        <li>若翻译失败或加载超时，点击「帮助」查看排查步骤，或前往系统设置检查语言包与设备端模式。</li>
+    </ul>
+
+    <h3>3.3 剪辑</h3>
+    <p><strong>一键快剪</strong>：自动从全部视频中选出「高潮」与「钩子」片段，拼接为推广短视频。</p>
+    <ul>
+        <li><strong>高潮</strong>：语速密集的精彩段落。</li>
+        <li><strong>钩子</strong>：开头/结尾悬念，吸引观看。</li>
+        <li>可勾选「考虑剧情」，按「开头·发展·高潮」选段，剪完能看懂剧在讲啥。</li>
+        <li>「对当前集执行」：仅对当前选中的单集自动选高潮；「一键快剪（全部视频）」：对所有集执行。</li>
+    </ul>
+    <p><strong>手动勾选</strong>：在「字幕」面板的句子或单词列表中勾选，将您想要的片段加入剪辑列表。</p>
+    <p><strong>片段预览</strong>：</p>
+    <ul>
+        <li>每条片段前有播放图标：未开始显示 ▶，播放中显示 ⏸，已结束显示 ⏹。</li>
+        <li>点击可播放/暂停/重新播放该片段。</li>
+        <li>「预览全部」：按顺序播放所有已选片段，播完自动暂停，不会继续播放原视频后续内容。</li>
+        <li>点 × 可删除不需要的片段。</li>
+    </ul>
+
+    <h3>3.4 导出</h3>
+    <p><strong>导出预设</strong>：默认、竖屏精简、竖屏标准、竖屏延展、横屏短片，按目标平台选择。</p>
+    <p><strong>画面处理</strong>：可选择模糊某角（如右上角）以遮挡角标，或选「无」。</p>
+    <p><strong>内嵌字幕</strong>：勾选后，导出视频将把字幕烧录到画面；不勾选则导出纯视频无字幕。</p>
+    <p><strong>导出处理后视频</strong>：选择保存位置后开始导出。仅处理本地导入的视频文件，请确保您拥有相关内容的使用权。</p>
+
+    <h2>四、导出字幕文件</h2>
+    <p>在「导出」面板可单独导出字幕，支持格式：</p>
+    <ul>
+        <li><strong>TXT</strong>：纯文本，无时间戳。</li>
+        <li><strong>SRT</strong>：常见字幕格式，兼容多数播放器与剪辑软件。</li>
+        <li><strong>VTT</strong>：Web 常用格式。</li>
+        <li><strong>ASS</strong>：支持样式与特效的字幕格式。</li>
+    </ul>
+    <p>可选择导出「句子级」或「单词级」时间戳。</p>
+
+    <h2>五、常见问题</h2>
+
+    <h3>转写失败或没有结果？</h3>
+    <ul>
+        <li>检查文件格式是否支持（MP3、WAV、M4A、MP4、MOV 等）。</li>
+        <li>若使用 Apple 语音识别引擎，确保已授予麦克风与语音识别权限。</li>
+        <li>确认模型已加载完成（「我的」→ 模型状态显示「就绪」）。</li>
+    </ul>
+
+    <h3>翻译不可用或加载超时？</h3>
+    <ul>
+        <li>前往<strong>系统设置 → 通用 → 翻译语言</strong>，下载目标语言包。</li>
+        <li>建议开启「设备端模式」，优先使用本地翻译。</li>
+        <li>首次翻译可能较慢，请耐心等待。</li>
+    </ul>
+
+    <h3>导出视频没有字幕？</h3>
+    <ul>
+        <li>确保在剪辑面板勾选了「内嵌字幕」选项。</li>
+        <li>若选择了角标模糊且未勾选内嵌字幕，导出的为纯视频。</li>
+    </ul>
+
+    <h3>预览时播完一个片段后还在继续播？</h3>
+    <p>正常情况下，预览全部已选片段时，播完最后一个片段会自动暂停。若出现异常，请尝试重新点击「预览全部」从头播放。</p>
+
+    <h3>URL 下载失败？</h3>
+    <ul>
+        <li>确保链接为 http 或 https 开头。</li>
+        <li>部分网站有防盗链，可能无法直接下载。</li>
+    </ul>
+
+    <h2>六、反馈与支持</h2>
+    <p>如有问题或建议，请通过应用内「用户支持与反馈」或 GitHub 仓库 Issues 联系我们。</p>
+
+    <p><a href="index.html">← 返回</a></p>
+</body>
+</html>
