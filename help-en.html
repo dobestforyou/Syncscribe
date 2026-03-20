@@ -26,7 +26,7 @@
     <div class="lang-switch"><a href="help.html">中文</a> | <a href="help-en.html" class="active">English</a></div>
 
     <h1>Syncscribe Help</h1>
-    <p class="meta">User Guide · Last updated: March 2025</p>
+    <p class="meta">User Guide · Last updated: March 2026</p>
 
     <h2>1. Quick Start</h2>
     <p>Syncscribe is an <strong>on-device</strong> audio/video transcription and subtitle tool. All processing happens on your device—no internet required.</p>
@@ -51,14 +51,9 @@
         <li><strong>Specify language</strong>: If content is primarily one language (e.g., Chinese, English, Japanese), selecting it improves accuracy.</li>
     </ul>
 
-    <h3>2.3 Model Selection</h3>
-    <p>In "Profile" → "Recognition Engine", you can switch models:</p>
-    <ul>
-        <li><strong>Lightweight (~39MB)</strong>: Small size, fast loading. Good when resources are limited.</li>
-        <li><strong>Standard (built-in, ~464MB)</strong>: Ready to use, no download. Balanced speed and accuracy. Recommended for daily use.</li>
-        <li><strong>High-accuracy (~626MB, requires download)</strong>: Best accuracy, strong noise resistance. Ideal for professional use or noisy audio.</li>
-    </ul>
-    <p>First use loads the model—please wait. For high-accuracy, tap "Download High-Accuracy" and wait for the download to complete.</p>
+    <h3>2.3 Recognition Model</h3>
+    <p>Transcription uses the <strong>high-accuracy recognition model</strong> only; the app no longer offers multiple model tiers to switch. On first use or after an update, follow on-screen prompts if a model download is required. Keep the app in the foreground while the model loads.</p>
+    <p>Check "Profile" to see when the model is ready before transcribing.</p>
 
     <h3>2.4 Batch Processing</h3>
     <p>With multiple files added, "Start Processing" transcribes all pending files in sequence. Already-transcribed files are skipped.</p>
@@ -120,7 +115,7 @@
     <ul>
         <li>Check that the file format is supported (MP3, WAV, M4A, MP4, MOV, etc.).</li>
         <li>If using Apple speech recognition, ensure microphone and speech recognition permissions are granted.</li>
-        <li>Confirm the model has loaded ("Profile" → model status shows "Ready").</li>
+        <li>Confirm the recognition model is ready (see status in "Profile"); if it is still downloading or loading, wait and try again.</li>
     </ul>
 
     <h3>Translation unavailable or times out?</h3>
@@ -148,6 +143,5 @@
     <h2>6. Feedback & Support</h2>
     <p>For questions or suggestions, contact us via in-app "User Support & Feedback" or GitHub repository Issues.</p>
 
-    <p><a href="index.html">← Back</a></p>
 </body>
 </html>
